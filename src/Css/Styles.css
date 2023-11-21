@@ -28,9 +28,27 @@
 .btn:hover{
     color: white;
     background-color: black;
+    transition: boreder;
 }
 
+.control{
+    border-color: #ada7a6;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 
+.control:hover {
+    border-color: #ada7a6; /* Change this to your desired color */
+    box-shadow: 0 0 10px rgba(168, 166, 165, 0.5); /* Change this to your desired color and shadow */
+  }
+
+.active{
+    color: #ada7a6;
+}
+
+.navstyles{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
 
 @media (max-width: 999px) {
     .nav{
@@ -42,3 +60,174 @@
 
 }
 
+
+
+.fonticon{
+    font-size: 1.4rem;
+    color: black;
+}
+.fontico:hover{
+    color: #050505;
+}
+
+
+
+
+/* popular */
+
+
+.popularstyle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px!important;
+    border: 0px;
+}
+
+.headstylepop{
+    font-weight: bold!important;
+    font-size: 2rem!important;
+    color: black;
+    font-family: sans-serif;
+}
+
+
+/* cardmodel */
+
+
+.linkdec{
+    text-decoration: none;
+}
+
+.imgs:hover{
+    transform: scale(1.2);
+}
+
+.imgs{
+    width: 345;
+    height: 200px;
+}
+
+.cardstyle{
+    height: 250px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold!important;
+    color: #050505;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* grid  */
+
+
+.alignrow{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    justify-content: center
+   
+}
+
+
+/* cardbutto */
+
+/* .alignbtnview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.btnalign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imags:hover{
+    transform: scale(1.2);
+}
+
+.imags{
+    width: 345;
+    height: 200px;
+}
+
+.cardstyles{
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titles{
+    font-weight: bold!important;
+    color: black;
+    font-size: 1.2rem!important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.viewbtn{
+    background-color: #528f2d;
+    color: white;
+    border-radius: 20px;
+}
+
+.viewbtn:hover{
+    color: #528f2d;
+    background-color: white;
+}
+
+
+/* detailview */
+
+.detail-style{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-detail{
+    height: 450px;
+}
+
+.namestyle{
+    font-weight: bold;
+    font-size: 1.9rem;
+    color: #050505;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.desc{
+    color: #050505;
+    font-size: 1.9rem;
+}
+
+.descalign{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+/* search  */
+
+
+.search-bar{
+    /* border: 1px solid black; */
+    height: 110px;
+    
+}
+
+.searchalign{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.widthform{
+    width: 400px;
+    height: 45px!important;
+}

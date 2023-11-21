@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { IoMdSearch } from "react-icons/io";
 import InputGroup from 'react-bootstrap/InputGroup';
+import { Outlet } from 'react-router-dom';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { RiAccountCircleFill } from "react-icons/ri";
+
 
 
 const Navbars = () => {
@@ -17,7 +21,8 @@ const Navbars = () => {
     color: 'black', 
   }
   const navsize = {
-    height : '110px',
+    height : '100px',
+    color: 'white'
   }
 
   const lefthead = {
@@ -31,31 +36,40 @@ const Navbars = () => {
   }
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" style={navsize}>
+    <div>
+      <Navbar expand="lg" className="navstyles" style={navsize}>
     <Container>
-      <Navbar.Brand href="#home" style={lefthead}>My Kitchen</Navbar.Brand>
+      <Navbar.Brand href="/" style={lefthead}>My Kitchen</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className='nav'>
         <Nav className="me-auto" style={navstyle}>
-          <Nav.Link href="#home" className='fontStyle'>Home</Nav.Link>
-          <Nav.Link href="#link" className='fontStyle'>All items</Nav.Link>
-          <Nav.Link href="#link" className='fontStyle'>Favorates <FaHeart /></Nav.Link>
-          <Nav.Link>
+          <Nav.Link href="/" className='fontStyle mt-2'>Home</Nav.Link>
+          <Nav.Link href='all' className='fontStyle mt-2'>All items</Nav.Link>
+          <Nav.Link href='favorates' className='fontStyle mt-2'>Favorates <FaHeart /></Nav.Link>
+          <NavDropdown title={<RiAccountCircleFill className='fonticon mt-2' />} >
+              <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Register</NavDropdown.Item>   
+            </NavDropdown>
+          {/* <Nav.Link>
             <InputGroup >
               <Form.Control
                 placeholder="Search food recipies"
                 aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
+                aria-describedby="basic-addon2" className='control'
               />
               <Button className='btn' id="button-addon2">
               <IoMdSearch />
               </Button>
             </InputGroup>
-          </Nav.Link>
+          </Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Container>
   </Navbar>
+  <div>
+    <Outlet></Outlet>
+  </div>
+    </div>
   )
 }
 
