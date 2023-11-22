@@ -6,24 +6,19 @@ import Cardsearch from './Cardsearch';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import Allitem from './Allitem';
+import { useSelector } from 'react-redux';
 
 const Allitemgrid = () => {
 
-    const [adata,setadata] = useState([])
-
-    useEffect(()=>{
-        axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=').then((res)=>{
-            console.log(res.data);
-            setadata(res.data.meals)
-        })
-    },[])
-
+  const result = useSelector((state)=>state.datastore.fav)
+  console.log(result);
   return (
     <div>
       <Container >  
         <Row className='alignrow'>
-            {adata?.map((item)=>(  
-                    <Col md="auto" className='mt-4'><Allitem image={item.strMealThumb} title={item.strMeal} id={item.idMeal}/></Col>
+            {result?.map((item)=>(  
+                    <Col md="auto" className='mt-4'><Allitem image={item.image} title={item.title} id={item.id}/></Col>
+
             ))} 
         </Row>
       

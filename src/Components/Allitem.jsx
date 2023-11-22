@@ -8,8 +8,14 @@ import item from '../Images/item.png';
 import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { removefav } from '../Components/DataSlice';
 
 const Allitem = (props) => {
+  const dispatch = useDispatch()
+  const handleDelete = (id) =>{
+    dispatch(removefav(id))
+  }
   return (
     <div>
        <Card sx={{ maxWidth: 345 }} className='cardstyles'>
@@ -21,13 +27,13 @@ const Allitem = (props) => {
             className='imags'
             />
             <CardContent className='alignbtnview'>
-            <Typography gutterBottom variant="h5" component="div" className='titles'>
-            {props.title} {props.id}   
+            <Typography gutterBottom variant="h5" component="div" className='titles stylealigns'>
+            {props.title}   
             </Typography>
             <div className='btnalign'>
-            <Link to={`/detail/${props.id}`}><Button className='viewbtn'>View details</Button></Link>
+              <Button className='viewbtn' onClick={()=>handleDelete(props.id)}>Remove</Button>
             </div>
-            </CardContent>
+            </CardContent>  
     </Card>
     </div>
   )

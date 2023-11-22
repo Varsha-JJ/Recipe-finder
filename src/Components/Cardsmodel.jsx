@@ -24,7 +24,7 @@ const Cardsmodel = (props) => {
             />
             <CardContent>
             <Typography gutterBottom variant="h5" component="div" className='title'>
-                {props.categorytitle} {props.id}
+                {props.categorytitle}
             </Typography>
             </CardContent>
     </Card>

@@ -10,6 +10,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { Outlet } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { RiAccountCircleFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,7 +23,9 @@ const Navbars = () => {
   }
   const navsize = {
     height : '100px',
-    color: 'white'
+    // color: 'white'
+    
+  
   }
 
   const lefthead = {
@@ -37,18 +40,19 @@ const Navbars = () => {
 
   return (
     <div>
-      <Navbar expand="lg" className="navstyles" style={navsize}>
+    <Navbar expand="lg" className="navstyles" style={navsize}>
     <Container>
       <Navbar.Brand href="/" style={lefthead}>My Kitchen</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className='nav'>
         <Nav className="me-auto" style={navstyle}>
-          <Nav.Link href="/" className='fontStyle mt-2'>Home</Nav.Link>
-          <Nav.Link href='all' className='fontStyle mt-2'>All items</Nav.Link>
-          <Nav.Link href='favorates' className='fontStyle mt-2'>Favorates <FaHeart /></Nav.Link>
-          <NavDropdown title={<RiAccountCircleFill className='fonticon mt-2' />} >
-              <NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Register</NavDropdown.Item>   
+          <Nav.Link as={Link} to="/" className='fontStyle mt-2'>Home</Nav.Link>
+          <Nav.Link as={Link} to='all/' className='fontStyle mt-2'>All items</Nav.Link>
+          <Nav.Link as={Link} to='favorates/' className='fontStyle mt-2'>Favorates <FaHeart /></Nav.Link>
+          <NavDropdown title="Account" className='fontStyle mt-2'>
+            {/* {<RiAccountCircleFill className='fonticon mt-2' />} */}
+              <NavDropdown.Item href="#home">Login</NavDropdown.Item>
+              <NavDropdown.Item href="#home">Register</NavDropdown.Item>   
             </NavDropdown>
           {/* <Nav.Link>
             <InputGroup >
