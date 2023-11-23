@@ -14,6 +14,10 @@
     font-weight: bold;
 }
 
+.custom-dropdown{
+    color: black!important;
+    font-weight: bold;
+}
 
 
 
@@ -34,7 +38,7 @@
         font-size: 0.5rem;
     }
     .img-detail{
-        height: 200px;
+        height: 284px!important;
     }
     .media{
         width:400px ;
@@ -47,6 +51,12 @@
 
   }
 
+
+  @media (max-width: 529px){
+    .img-detail{
+        height: 200px!important;
+    }
+  }
 
 .fontStyle{
     color: black;
@@ -257,7 +267,7 @@
     width: 100%;
     height: 100%;
   }
-  
+
 .media{
     width:900px ;
     height: 400px;
@@ -318,4 +328,9 @@
     margin-top: -3340px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.cardstylecounter{
+    height: 50px;
+    box-shadow:  3px -3px 10px -1px rgba(92, 193, 93, 0.2)!important;
 }

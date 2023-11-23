@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Categoryitems from './Categoryitems';
 import { useParams } from 'react-router-dom';
+import Search from './Search';
  
 
 const Categorygrid = () => {
@@ -26,8 +27,8 @@ const Categorygrid = () => {
       <Container >
         <Row className='alignrow'>
             {data?.map((item)=>(
-                    <Col md="auto" className='mt-4'  key={item.idMeal}><Categoryitems image={item.strMealThumb} title={item.strMeal} /></Col>
-            ))} 
+                    <Col md="auto" className='mt-4'  key={item.idMeal}><Categoryitems image={item.strMealThumb} title={item.strMeal} cate={item.strCategory} id={item.idMeal}  /></Col>
+            ))}    
         </Row>
       
     </Container>

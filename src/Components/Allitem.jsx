@@ -33,7 +33,7 @@ const Allitem = (props) => {
             <div className='btnalign'>
               <Button className='viewbtn' onClick={()=>handleDelete(props.id)}>Remove</Button>
             </div>
-            </CardContent>  
+            </CardContent>    
     </Card>
     </div>
   )

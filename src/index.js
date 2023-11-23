@@ -16,6 +16,7 @@ import store from './Components/Store';
 import Grids from './Components/Grids';
 import Categorygrid from './Components/Categorygrid';
 import Categoryitem from './Pages/Categoryitem';
+import Country from './Pages/Country';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +29,7 @@ root.render(
           <Route path="all" element={<Products/>}/>
           <Route path="favorates" element={<Favorate/>}/>
           <Route path="popular" element={<Popular/>}/>
+          <Route path="country" element={<Country/>}/>
           <Route path="card" element={<Cardsmodel/>}/>
           <Route path="grid" element={<Grids/>}/>
           <Route path="cardbtn" element={<Cardbutton/>}/>

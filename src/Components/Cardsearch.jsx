@@ -44,7 +44,7 @@ const Cardsearch = (props) => {
             <CardContent>
             <Typography gutterBottom variant="p" component="div" className='stylealigns' >
             {props.cate}
-            </Typography>
+            </Typography>  
             <Typography gutterBottom variant="h5" component="div" className='titles stylealigns'>
             {props.title} 
             </Typography>

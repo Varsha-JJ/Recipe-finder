@@ -50,11 +50,12 @@ const Navbars = () => {
           <Nav.Link as={Link} to="/" className='fontStyle mt-2'>Home</Nav.Link>
           <Nav.Link as={Link} to='all/' className='fontStyle mt-2'>All items</Nav.Link>
           <Nav.Link as={Link} to='favorates/' className='fontStyle mt-2'>Favorates <FaHeart /></Nav.Link>
-          <NavDropdown title="Account" className='fontStyle mt-2'>
-            {/* {<RiAccountCircleFill className='fonticon mt-2' />} */}
+          <Nav.Link as={Link} to='country' className='fontStyle mt-2'>Country</Nav.Link>
+          {/* <NavDropdown title="Account" className='mt-2 custom-dropdown'   style={{ color: 'black', fontWeight: 'bold' }}>
+            {<RiAccountCircleFill className='fonticon mt-2' />}
               <NavDropdown.Item href="#home">Login</NavDropdown.Item>
               <NavDropdown.Item href="#home">Register</NavDropdown.Item>   
-            </NavDropdown>
+            </NavDropdown> */}
           {/* <Nav.Link>
             <InputGroup >
               <Form.Control

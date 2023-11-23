@@ -3,37 +3,33 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
+import item from '../Images/item.png';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Link } from 'react-router-dom';   
-import { useParams } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
-
-
-const Cardsmodel = (props) => {
-
+const Coutrycard = (props) => {
   return (
     <div>
-      <Link to={`/category/${props.categorytitle}`} className='linkdec'>
-       <Card sx={{ maxWidth: 345 }} className='cardstyle'>
-            <CardMedia
+       {/* <Link to={`/category/${props.categorytitle}`} className='linkdec'> */}
+       <Card sx={{ maxWidth: 345 }} className='cardstylecounter'>
+            {/* <CardMedia
             component="img"
             height="140"
-            image={props.image}
+            image=""
             alt="green iguana"
             className='imgs'
-            />
+            /> */}
             <CardContent>
-            <Typography gutterBottom variant="h5" component="div" className='titles stylealigns'>
-            {props.title}   
-            </Typography>
             <Typography gutterBottom variant="h5" component="div" className='title'>
-                {props.categorytitle}
+                {props.area}
             </Typography>
             </CardContent>
     </Card>
-    </Link>
+    {/* </Link> */}
     </div>
   )
 }
 
-export default Cardsmodel
+export default Coutrycard

@@ -33,7 +33,7 @@ const Detailpage = () => {
           <Card style={{ width: '65%',border:0 }} className='carddetail'>
             <Card.Body>
             <Card.Img variant="top" src={detail.strMealThumb} className='img-detail' />
-              <Card.Title className='mt-3 namestyle'>{detail.strMeal} <button className='btnheart'onClick={addToFavorites}></button></Card.Title>     
+              <Card.Title className='mt-3 namestyle'>{detail.strMeal} <button className='btnheart'onClick={addToFavorites}><FaRegHeart /></button></Card.Title>     
               <Card.Title className='mt-3 desc'>Instructions</Card.Title>
               <Card.Subtitle className="mb-2 mt-3 text-muted descalign">{detail.strInstructions}</Card.Subtitle>
               <Card.Title className='mt-3 desc'>Ingredients</Card.Title>
