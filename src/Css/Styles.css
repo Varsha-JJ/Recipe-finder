@@ -33,6 +33,17 @@
         font-weight: bold;
         font-size: 0.5rem;
     }
+    .img-detail{
+        height: 200px;
+    }
+    .media{
+        width:400px ;
+        height: 200px;
+    }
+    .iframe-container{
+        width: 400px;
+        height: 200px;
+    }
 
   }
 
@@ -229,6 +240,27 @@
 
 .img-detail{
     height: 450px;
+}
+
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+.media{
+    width:900px ;
+    height: 400px;
 }
 
 .namestyle{

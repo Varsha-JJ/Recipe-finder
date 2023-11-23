@@ -30,10 +30,10 @@ const Detailpage = () => {
 
   return (
     <div className='detail-style'>
-          <Card style={{ width: '65%',border:0 }} >
+          <Card style={{ width: '65%',border:0 }} className='carddetail'>
             <Card.Body>
             <Card.Img variant="top" src={detail.strMealThumb} className='img-detail' />
-              <Card.Title className='mt-3 namestyle'>{detail.strMeal} <button className='btnheart'onClick={addToFavorites}><FaRegHeart /></button></Card.Title>     
+              <Card.Title className='mt-3 namestyle'>{detail.strMeal} <button className='btnheart'onClick={addToFavorites}></button></Card.Title>     
               <Card.Title className='mt-3 desc'>Instructions</Card.Title>
               <Card.Subtitle className="mb-2 mt-3 text-muted descalign">{detail.strInstructions}</Card.Subtitle>
               <Card.Title className='mt-3 desc'>Ingredients</Card.Title>
@@ -56,7 +56,9 @@ const Detailpage = () => {
               </Card.Subtitle>
               <Card.Title className='mt-3 desc'>Media</Card.Title>
               <Card.Subtitle className="mb-2 mt-3 text-muted">
-                <iframe src={detail.strYoutube} width={900} height={400}/>
+                <div className="iframe-container">
+                  <iframe src={detail.strYoutube} className='media' />
+                </div>
               </Card.Subtitle>
             </Card.Body>
         </Card>
