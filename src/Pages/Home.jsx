@@ -5,13 +5,16 @@ import Image from 'react-bootstrap/Image';
 import '../Css/Styles.css';
 import Grids from '../Components/Grids';
 import Popular from '../Components/Popular';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
     const item = {
         display : 'flex',
         justifyContent: 'center',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        flexDirection: 'column',
     }
 
     
@@ -26,7 +29,8 @@ const Home = () => {
       <div style={{ position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}>
             <div style={item}>
               <h1 className='headingStyle'>Find recipies for every occasion</h1>
-              <h1 className='headingStyle'> Cooking never was easier</h1>
+              <h1 className='headingStyle'> Cooking never was easier</h1> 
+              <Link to='all'><button className='homebtn mt-3'>Search your recipes</button></Link>
             </div>
       </div>
     </div>

@@ -4,11 +4,35 @@
     font-weight: bold;
 }
 
+.homebtn{
+    border: none;
+    background-color: #528f2d;
+    height: 50px;
+    width: 180px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
 @media (max-width: 768px) {
     
     .headingStyle {
-        font-size: 6vw;
+        font-size: 3vw;
       }
+
+    .homebtn{
+        border: none;
+        background-color: #528f2d;
+        height: 30px;
+        width: 80px;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        font-size: 0.5rem;
+    }
 
   }
 
@@ -193,7 +217,7 @@
 .btnheart{
     background-color: white;
     border: none;
-    color: #528f2d;
+    color: red;
 }
 .detail-style{
     display: flex;
@@ -251,4 +275,15 @@
     margin-left: 285px!important;
     margin-top: 10px;
     background-color: transparent;
+}
+
+
+.filter-box{
+    background-color: red;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin-top: -3340px;
+    display: flex;
+    flex-wrap: wrap;
 }

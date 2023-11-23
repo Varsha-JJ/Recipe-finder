@@ -13,7 +13,7 @@ const Cardsmodel = (props) => {
 
   return (
     <div>
-      <Link to={`/category/${props.id}`} className='linkdec'>
+      {/* <Link to={`/category/${props.id}`} className='linkdec'> */}
        <Card sx={{ maxWidth: 345 }} className='cardstyle'>
             <CardMedia
             component="img"
@@ -28,7 +28,7 @@ const Cardsmodel = (props) => {
             </Typography>
             </CardContent>
     </Card>
-    </Link>
+    {/* </Link> */}
     </div>
   )
 }

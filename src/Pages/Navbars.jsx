@@ -24,6 +24,7 @@ const Navbars = () => {
   const navsize = {
     height : '100px',
     // color: 'white'
+    boxShadow: '0px -1px 0px inset black'
     
   
   }

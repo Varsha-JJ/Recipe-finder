@@ -50,6 +50,7 @@ const Search = () => {
                 aria-label="Search"
                 onChange ={change}
               />
+              
               <Button className="rounded-pill" variant="outline-primary" onClick={handlesearch} >
                 Search
               </Button>

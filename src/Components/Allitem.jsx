@@ -18,7 +18,7 @@ const Allitem = (props) => {
   }
   return (
     <div>
-       <Card sx={{ maxWidth: 345 }} className='cardstyles'>
+       <Card sx={{ maxWidth: 245 }} className='cardstyles'>
             <CardMedia
             component="img"
             height="140"
