@@ -1,19 +1,17 @@
+import { useParams } from 'react-router-dom';
 import axios from 'axios'
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Categoryitems from './Categoryitems';
-import { useParams } from 'react-router-dom';
-import Search from './Search';
- 
 
-const Categorygrid = () => {
+const Countryfilter = () => {
     const { id } = useParams();  
     const [data,setdata] = useState([])
 
     useEffect(()=>{
-        axios(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${id}`).then((res)=>{
+        axios(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${id}`).then((res)=>{
         console.log("res", res.data);
         setdata(res.data.meals);
         }).catch((error)=>{
@@ -37,4 +35,4 @@ const Categorygrid = () => {
   )
 }
 
-export default Categorygrid
+export default Countryfilter

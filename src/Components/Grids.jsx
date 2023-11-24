@@ -28,13 +28,13 @@ const Grids = () => {
         <Row className='alignrow'>
         {data?.map((item)=>(  
            
-            <Col md="auto" className='mt-4'><Cardsmodel image={item.strCategoryThumb} categorytitle={item.strCategory} title={item.strMeal} id={item.idCategory}/></Col> 
-       
+            <Col md="auto" className='mt-4'><Cardsmodel image={item.strCategoryThumb} categorytitle={item.strCategory} title={item.strMeal} id={item.idMeal}/></Col> 
+          
         ))}  
         </Row>
       
     </Container>
-    </div>
+    </div> 
   )
 }
 

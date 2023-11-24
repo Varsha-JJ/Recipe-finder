@@ -17,6 +17,7 @@ import Grids from './Components/Grids';
 import Categorygrid from './Components/Categorygrid';
 import Categoryitem from './Pages/Categoryitem';
 import Country from './Pages/Country';
+import Countryfilter from './Components/Countryfilter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,7 +36,8 @@ root.render(
           <Route path="cardbtn" element={<Cardbutton/>}/>
           <Route path="/detail/:id/" element={<Detailpage/>}/>
           <Route path="categoryitem" element={<Categoryitem/>}/>
-          <Route path="/category/:id/" element={<Categorygrid/>}/>
+          <Route path="/category/:id/" element={<Categorygrid/>}/> 
+          <Route path="/country/:id/" element={<Countryfilter/>}/>    
         </Route>
        
        

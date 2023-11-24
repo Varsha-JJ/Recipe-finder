@@ -8,7 +8,7 @@ import axios from 'axios';
 import Allitem from './Allitem';
 import { useSelector } from 'react-redux';
 
-const Allitemgrid = () => {
+const Allitemgrid = () => {  
 
   const result = useSelector((state)=>state.datastore.fav)
   console.log(result);
@@ -17,7 +17,7 @@ const Allitemgrid = () => {
       <Container >  
         <Row className='alignrow'>
             {result?.map((item)=>(  
-                    <Col md="auto" className='mt-4'><Allitem image={item.image} title={item.title} id={item.id}/></Col>
+                    <Col md="auto" className='mt-4'><Allitem image={item.strMealThumb} title={item.strMeal} cate={item.strCategory} id={item.idMeal}/></Col>
 
             ))} 
         </Row>

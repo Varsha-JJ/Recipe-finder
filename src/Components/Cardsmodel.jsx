@@ -16,7 +16,7 @@ const Cardsmodel = (props) => {
       <Link to={`/category/${props.categorytitle}`} className='linkdec'>
        <Card sx={{ maxWidth: 345 }} className='cardstyle'>
             <CardMedia
-            component="img"
+            component="img"   
             height="140"
             image={props.image}
             alt="green iguana"
@@ -24,13 +24,13 @@ const Cardsmodel = (props) => {
             />
             <CardContent>
             <Typography gutterBottom variant="h5" component="div" className='titles stylealigns'>
-            {props.title}   
+            {props.title}  {props.id} 
             </Typography>
             <Typography gutterBottom variant="h5" component="div" className='title'>
                 {props.categorytitle}
             </Typography>
             </CardContent>
-    </Card>
+     </Card>
     </Link>
     </div>
   )

@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
     searchdatas:[],
-    fav : []
+    fav : [],
   }
   
 
@@ -28,14 +28,15 @@ const DataSlice = createSlice({
       removefav : (state,action) =>{
         const remove = action.payload;
         state.fav = state.fav.filter((item)=>item.id !== remove)
-      }
+      },
+     
     },
   })
   
   
   
   
-export const { setsearchdatas,setfav,removefav } =DataSlice.actions
+export const { setsearchdatas,setfav,removefav,setSelectedProductId } =DataSlice.actions
   
   
 

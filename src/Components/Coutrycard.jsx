@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 
 const Coutrycard = (props) => {
   return (
-    <div>
-       {/* <Link to={`/category/${props.categorytitle}`} className='linkdec'> */}
+    <div>  
+       <Link to={`/country/${props.area}`} className='linkdec'>
        <Card sx={{ maxWidth: 345 }} className='cardstylecounter'>
             {/* <CardMedia
             component="img"
@@ -27,7 +27,7 @@ const Coutrycard = (props) => {
             </Typography>
             </CardContent>
     </Card>
-    {/* </Link> */}
+    </Link>
     </div>
   )
 }

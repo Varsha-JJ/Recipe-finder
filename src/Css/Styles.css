@@ -48,14 +48,21 @@
         width: 400px;
         height: 200px;
     }
+   
 
   }
+
+
 
 
   @media (max-width: 529px){
     .img-detail{
         height: 200px!important;
     }
+    .btnheart {
+        margin-left: 10%!important;
+    }
+    
   }
 
 .fontStyle{
@@ -208,7 +215,7 @@
 }
 
 .cardstyles{
-    height: 350px;
+    height: 360px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -239,7 +246,11 @@
     background-color: white;
     border: none;
     color: red;
+ 
 }
+
+
+
 .detail-style{
     display: flex;
     flex-wrap: wrap;
@@ -333,4 +344,8 @@
 .cardstylecounter{
     height: 50px;
     box-shadow:  3px -3px 10px -1px rgba(92, 193, 93, 0.2)!important;
+}
+
+.linkst{
+    text-decoration: none;
 }

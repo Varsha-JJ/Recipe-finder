@@ -23,10 +23,10 @@ const Categoryitems = (props) => {
             {props.cate}
             </Typography>
             <Typography gutterBottom variant="h5" component="div" className='titles  stylealigns'>
-            {props.title}   
+            {props.title}  
             </Typography>
             <div className='btnalign'>
-            <Link to={`/detail/${props.id}`}>
+            <Link to={`/detail/${props.id}`}>   
             <Button className='viewbtn'>View details</Button>
             </Link>
             </div>

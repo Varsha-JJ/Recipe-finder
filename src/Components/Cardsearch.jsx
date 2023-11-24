@@ -40,8 +40,8 @@ const Cardsearch = (props) => {
             alt="green iguana"
             className='imags'  
             />
-            <button onClick={isFavorite ? ()=>handleDelete(props.id)  : addToFavorites} className='btnheart heartalign'>{isFavorite ? <FaHeart /> : <FaRegHeart />}</button>
-            <CardContent>
+            {/* <button onClick={isFavorite ? ()=>handleDelete(props.id)  : addToFavorites} className='btnheart heartalign'>{isFavorite ? <FaHeart /> : <FaRegHeart />}</button> */}
+            <CardContent>        
             <Typography gutterBottom variant="p" component="div" className='stylealigns' >
             {props.cate}
             </Typography>  
@@ -49,7 +49,7 @@ const Cardsearch = (props) => {
             {props.title} 
             </Typography>
             <div className='btnalign'>
-            <Link to={`/detail/${props.id}`}>
+            <Link to={`/detail/${props.id}`}>  
             <Button className='viewbtn'>View details</Button>
             </Link>
             </div>

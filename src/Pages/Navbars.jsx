@@ -49,7 +49,7 @@ const Navbars = () => {
         <Nav className="me-auto" style={navstyle}>
           <Nav.Link as={Link} to="/" className='fontStyle mt-2'>Home</Nav.Link>
           <Nav.Link as={Link} to='all/' className='fontStyle mt-2'>All items</Nav.Link>
-          <Nav.Link as={Link} to='favorates/' className='fontStyle mt-2'>Favorates <FaHeart /></Nav.Link>
+          <Nav.Link as={Link} to='favorates/' className='fontStyle mt-2'>Favourite <FaHeart /></Nav.Link>
           <Nav.Link as={Link} to='country' className='fontStyle mt-2'>Country</Nav.Link>
           {/* <NavDropdown title="Account" className='mt-2 custom-dropdown'   style={{ color: 'black', fontWeight: 'bold' }}>
             {<RiAccountCircleFill className='fonticon mt-2' />}
